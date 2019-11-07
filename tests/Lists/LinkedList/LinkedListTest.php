@@ -7,7 +7,7 @@ use DsAndAlgoInPhp\Lists\LinkedList\LinkedList;
 class LinkedListTest extends TestCase
 {
 
-    public function test_class()
+    public function test_instance()
     {
         $list = new LinkedList();
         $this->assertInstanceof(LinkedList::class, $list);
