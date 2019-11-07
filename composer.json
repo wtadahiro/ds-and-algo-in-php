@@ -1,0 +1,23 @@
+{
+    "name": "wtadahiro/ds-and-algo-in-php",
+    "type": "project",
+    "require": {
+        "phpunit/phpunit": "^8.4"
+    },
+    "authors": [
+        {
+            "name": "tadahiro.wada",
+            "email": "tadahiro.wada@d8aspring.com"
+        }
+    ],
+    "autoload": {
+      "psr-4": {
+        "DsAndAlgoInPhp\\": "src/"
+      }
+    },
+    "autoload-dev": {
+      "psr-4": {
+        "Tests\\": "tests/"
+      }
+    }
+}
