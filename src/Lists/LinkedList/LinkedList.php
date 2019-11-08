@@ -96,7 +96,22 @@ class LinkedList
     {
     }
 
-    public function toString()
+    public function get(int $index): ?int
+    {
+
+        if ($index > $this->count() - 1) {
+            throw new \OutOfRangeException();
+        }
+
+        $node = $this->first_node;
+        for ($i = 0; $i < $index; $i++) {
+            $node = $node->next();
+        }
+
+        return $node->getValue();
+    }
+
+    public function toString(): string
     {
         $node = $this->first_node;
         $string = '';
@@ -114,7 +129,7 @@ class LinkedList
     /**
      * @return int
      */
-    public function count()
+    public function count(): int
     {
         return $this->count;
     }
